@@ -18,7 +18,7 @@ setup(
     license="MIT",
     nstall_requires=["flask"],
     package_dir={'': 'src'},
-    packages=['flask_json_db'],
+    packages=['flask_crlatency'],
     keywords=[
         "flask-extension","log-route-latency"
     ],
