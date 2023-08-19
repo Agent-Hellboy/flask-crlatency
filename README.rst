@@ -8,6 +8,9 @@ Example
 
 .. code:: py 
 
+    from flask import Flask 
+    from flask_crlatency import RouteLatencyLogger
+
     app = Flask(__name__) 
     app.config["SECRET_KEY"] ="your_secret_key" 
     app.config["DEBUG"] = True
@@ -15,7 +18,8 @@ Example
     latency_logger = RouteLatencyLogger(app)
     
     @app.route("/") 
-    def index(): return "Hello, World!"
+    def index(): 
+        return "Hello, World!"
 
     if __name__ == "__main__": 
         app.run()

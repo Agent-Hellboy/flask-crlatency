@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name="flask-crlatency",
-    version="0.0.1",
+    version="0.0.2",
     author="Prince Roshan",
     author_email="princekrroshan01@gmail.com",
     url="https://github.com/Agent-Hellboy/flask-crlatency",
