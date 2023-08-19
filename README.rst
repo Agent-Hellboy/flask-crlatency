@@ -14,6 +14,7 @@ Example
     app = Flask(__name__) 
     app.config["SECRET_KEY"] ="your_secret_key" 
     app.config["DEBUG"] = True
+    app.config["MAX_ROUTE_LATENCY"] = 0.1
     
     latency_logger = RouteLatencyLogger(app)
     
@@ -26,6 +27,5 @@ Example
 
     response:
     
-    [2023-08-10 21:52:54,341] INFO in **init**: Latency for route index:
-    0.000188 seconds 127.0.0.1 - - [10/Aug/2023 21:52:54] “GET / HTTP/1.1”
-    200 -
+    [2023-08-19 10:00:58,654] WARNING in __init__: High latency for route index: 3.001345 seconds
+    127.0.0.1 - - [19/Aug/2023 10:00:58] "GET / HTTP/1.1" 200 -
