@@ -3,6 +3,10 @@ flask-crlatency (flask-check-route-latency)
 
 A flask extension to log route latency
 
+Installation 
+------------
+pip install flask-crlatency
+
 Example
 -------
 
